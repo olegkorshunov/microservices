@@ -33,6 +33,10 @@ isort = "^5.12.0"
 passlib = "^1.7.4"
 python-jose = "^3.3.0"
 bcrypt = "^4.0.1"
+flask = "^2.3.2"
+psycopg2 = "^2.9.6"
+marshmallow = "^3.19.0"
+flask-apispec = "^0.11.4"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -41,6 +45,7 @@ isort = "^5.12.0"
 black = "^23.3.0"
 autoflake = "^2.2.0"
 pyright = "^1.1.316"
+faker = "^18.11.2"
 
 [build-system]
 requires = ["poetry-core"]

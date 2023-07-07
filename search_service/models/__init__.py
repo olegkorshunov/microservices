@@ -1,0 +1,1 @@
+from search_service.search.models import UserData
