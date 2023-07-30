@@ -35,6 +35,6 @@ async def logout_user(response: Response):
     response.delete_cookie(access_token)
 
 
-@router.get("/me")
+@router.get("/is_auth")
 async def get_user_info(user: SUserInfo = Depends(get_current_user)) -> SUserInfo:
     return user

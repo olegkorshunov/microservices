@@ -25,7 +25,10 @@ app.config.update(
     }
 )
 
+
 app.register_blueprint(searc_b, url_prefix="/search")
+
+
 docs.register(search, blueprint="search")
 
 if __name__ == "__main__":

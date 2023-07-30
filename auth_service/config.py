@@ -16,7 +16,7 @@ class Settings(BaseSettings):
         return f"postgresql+asyncpg://{self.DB_USER}:{self.DB_PASS}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
 
     class Config:
-        env_file = ".env-dev-search-service"
+        env_file = ".env-dev-auth-service"
 
 
 settings = Settings()

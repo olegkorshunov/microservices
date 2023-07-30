@@ -10,25 +10,25 @@ class AuthException(HTTPException):
 
 
 class UserAlredyExist(AuthException):
-    status_code = (status.HTTP_409_CONFLICT,)
-    detail = ("User alredy exist",)
+    status_code = status.HTTP_409_CONFLICT
+    detail = "User alredy exist"
 
 
 class IncorrectEmailOrPassword(AuthException):
-    status_code = (status.HTTP_409_CONFLICT,)
-    detail = ("Incorrect email or password",)
+    status_code = status.HTTP_409_CONFLICT
+    detail = "Incorrect email or password"
 
 
 class AuthTokenExpier(AuthException):
-    status_code = (status.HTTP_401_UNAUTHORIZED,)
-    detail = ("Auth token has expired",)
+    status_code = status.HTTP_401_UNAUTHORIZED
+    detail = "Auth token has expired"
 
 
 class TokenAbsent(AuthException):
-    status_code = (status.HTTP_401_UNAUTHORIZED,)
-    detail = ("Token is absent",)
+    status_code = status.HTTP_401_UNAUTHORIZED
+    detail = "Token is absent"
 
 
 class IncorrectTokenFormat(AuthException):
-    status_code = (status.HTTP_401_UNAUTHORIZED,)
-    detail = ("Incorrect token format",)
+    status_code = status.HTTP_401_UNAUTHORIZED
+    detail = "Incorrect token format"
